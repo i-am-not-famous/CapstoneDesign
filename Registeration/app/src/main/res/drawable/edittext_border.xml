@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 입력창, 버튼 등에 사용할 테두리 스타일을 정의하는 파일입니다. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 배경을 투명하게 설정합니다. -->
+    <solid android:color="@android:color/transparent" />
+
+    <!-- 테두리를 검은색, 1dp 두께로 설정합니다. -->
+    <stroke
+        android:width="1dp"
+        android:color="@android:color/black" />
+
+    <!-- 모서리를 약간 둥글게 만듭니다. -->
+    <corners android:radius="4dp" />
+
+</shape>

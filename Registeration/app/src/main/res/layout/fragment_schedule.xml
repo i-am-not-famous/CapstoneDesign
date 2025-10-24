@@ -1,0 +1,1451 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleFragment"
+    android:background="@color/colorBackground">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text=""
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_assignment_24"
+                android:drawableLeft="@drawable/baseline_assignment_24"
+                android:layout_gravity="center"/>
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="월"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="center"/>
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="화"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="center"/>
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="수"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="center"/>
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="목"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="center"/>
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="금"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textAlignment="center"/>
+
+        </TableRow>
+
+        <!-- 시간표는 인천대학교 어플의 시간표를 기준으로 함 -->
+        <!-- 07:00~24:00 를 1시간 단위로 17개로 구분함 -->
+
+        <!-- 0교시 (07:00 ~ 08:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="7"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday0"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday0"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday0"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday0"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday0"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 1교시 (08:00 ~ 09:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="8"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday1"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday1"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday1"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday1"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday1"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 2교시 (09:00 ~ 10:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="9"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday2"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday2"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday2"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday2"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday2"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 3교시 (10:00 ~ 11:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="10"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday3"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday3"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday3"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday3"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday3"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 4교시 (11:00 ~ 12:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="11"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday4"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday4"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday4"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday4"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday4"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 5교시 (12:00 ~ 13:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="12"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday5"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday5"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday5"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday5"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday5"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 6교시 (13:00 ~ 14:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="13"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday6"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday6"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday6"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday6"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday6"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 7교시 (14:00 ~ 15:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="14"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday7"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday7"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday7"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday7"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday7"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 8교시 (15:00 ~ 16:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="15"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday8"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday8"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday8"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday8"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday8"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 9교시 (16:00 ~ 17:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="16"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday9"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday9"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday9"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday9"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday9"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 10교시 (17:00 ~ 18:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="17"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday10"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday10"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday10"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday10"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday10"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 11교시(야간1교시) (18:00 ~ 19:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="18"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday11"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday11"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday11"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday11"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday11"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 12교시(야간2교시) (19:00 ~ 20:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="19"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday12"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday12"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday12"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday12"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday12"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 13교시(야간3교시) (20:00 ~ 21:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="20"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday13"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday13"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday13"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday13"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday13"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 14교시(야간4교시) (21:00 ~ 22:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="21"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday14"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday14"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday14"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday14"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday14"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 15교시(야간5교시) (22:00 ~ 23:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="22"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday15"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday15"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday15"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday15"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday15"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+        <!-- 16교시(야간6교시) (22:00 ~ 23:00) -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark">
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:text="23"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:paddingRight="1dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/monday16"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/tuesday16"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/wednesday16"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/thursday16"
+                android:padding="2dp"
+                />
+
+            <com.inucapstonejeonguk.registeration.AutoResizeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/cell_shape"
+                android:id="@+id/friday16"
+                android:padding="2dp"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>

@@ -1,0 +1,69 @@
+1. CSV 파일로 저장(UTF-8로 인코딩)
+
+2. csv파일 첫번째 열 비우기(열의 내용을 없애는 것이 아닌, 열 삭제)
+  첫번째 열(courseID)은 DB에서 자동으로 인덱스를 매기니 따로 설정할 필요가 없음.
+
+3. 메모장 마지막 개행문자 기입 금지
+  csv파일을 메모장으로 열고, 맨 마지막의 개행문자 삭제(보통 엔터 한 칸 쳐져있는 상황)
+
+4. 열 구분 기호 쉼표로 설정
+  DB에서 가져오기 할 때
+
+5. 열 이름에 다음과 같이 입력하기
+  첫 번째 열을 비웠기 때문(열 삭제)에 두 번째 열부터 세팅하라는 입력임
+
+///// courseNumber,courseUniversity,courseYear,courseTerm,courseArea,courseMajor,courseGrade,courseTitleKorean,courseTitleEnglish,courseCredit,courseDivide,coursePersonnel,courseProfessor,courseTime,courseRoom,courseType,foreignLanguageLecture
+
+/////
+
+6. 쿼리 수정 시에는 다음과 같은 형식 이용
+
+/////
+ALTER TABLE COURSE MODIFY COLUMN courseNumber VARCHAR(20);
+/////
+
+7. 한글 문서가 깨져서 ???로 보일때에는
+  다음과 같은 코드 붙여넣기
+php파일의  
+$con = mysqli_connect("localhost", "jeje2025", "wjddnr6537@", "jeje2025");
+코드 뒤에
+mysqli_set_charset($con,"utf8");
+붙이기
+
+8. 혹시 .java 파일에서 DB를 선택적으로 가져오는 경우, 제한을 두는 경우(subString(0,4) 등) 적절하게 조치하기
+  문제상황: DB에는 '2025년도'라고 기입, CourseFragment.java 파일에는 다음과 같이 입력
+
+/////
+        @Override
+        protected void onPreExecute() {
+
+            try {
+
+            target  = "http://jeje2025.mycafe24.com/CourseList.php?courseUniversity="
+                    + URLEncoder.encode(courseUniversity, "UTF-8")
+                    + "&courseYear=" + URLEncoder.encode(yearSpinner.getSelectedItem().toString().substring(0,4), "UTF-8")
+                    + "&courseTerm=" + URLEncoder.encode(termSpinner.getSelectedItem().toString(),"UTF-8")
+                    + "&courseArea=" + URLEncoder.encode(areaSpinner.getSelectedItem().toString(), "UTF-8")
+                    + "&courseMajor=" + URLEncoder.encode(majorSpinner.getSelectedItem().toString(), "UTF-8");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+/////
+
+subString(0,6)으로 변경 또는 삭제하여 해결
+
+
+9. 엑셀 파일 저장 시 첫 열(CourseNumber)은 
+  (ctrl + 1) -> 사용자 지정 -> 0000000000 (0 10개 설정) 설정 -> 텍스트 지정
+
+10. 마지막 끝 열 문자 기입 금지
+  메모장연결 시 다음과 같은 문제 발생
+
+11845001,학부,2025년도,2학기,핵심교양,(핵심교양)INU세미나,전학년,위대한개츠비와그의친구들,The Great Gatsby and His Friends,3,1,23,남정현, [12-301:수(4)(5)(6)],제12호관 컨벤션센터-301 토론식강의실1[12-301],해당사항없음,N,,
+11631001,학부,2025년도,2학기,핵심교양,(핵심교양)INU세미나,전학년,문학욕망의윤리를말하다,Literature talks about the ethics of desire,3,1,25,최혜림, [12-301:수(7)(8)(9)],제12호관 컨벤션센터-301 토론식강의실1[12-301],해당사항없음,N,,
+11244001,학부,2025년도,2학기,핵심교양,(핵심교양)INU세미나,전학년,현대과학의풍경읽기,Understanding of Modern Science and Technology,3,1,23,정경숙, [12-304:금(4)(5)(6)],제12호관 컨벤션센터-304 토론식강의실2[12-304],해당사항없음,N,,
+
+마지막 열 + 1이 되어버림. (N으로 끝나지 않고 N,, 으로 끝남. 공백열로 간주)
+
+11. '전학년'인경우 앱 실행시 '전학년학년'으로 표시되니 엑셀파일에 '전'이라고만 표시할 것

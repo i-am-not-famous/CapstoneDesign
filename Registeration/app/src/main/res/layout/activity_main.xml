@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- [수정] 주석 요청에 따라 전체 레이아웃을 LinearLayout으로 변경하고, 수직 정렬(vertical)을 지정합니다. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- 1. 상단 버튼 그룹 (기존 코드 유지) -->
+    <!-- LinearLayout 안에서는 weight가 잘 작동하므로 이 부분은 수정할 필요가 없습니다. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/courseButton"
+            android:text="강의 목록"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/scheduleButton"
+            android:text="시간표"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/statisticsButton"
+            android:text="강의 분석"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:background="@color/colorPrimary"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <!-- 2. 동적 컨텐츠 영역 (Fragment가 표시될 공간) -->
+    <!-- FrameLayout은 여러 뷰를 겹쳐놓기에 최적화된 레이아웃입니다. -->
+    <!-- 여기에 공지사항이나 다른 Fragment들을 교체해서 보여주게 됩니다. -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 초기 화면으로 보여줄 공지사항 레이아웃 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/notice_layout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/inu_watermark_utlizied" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="공지사항"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/noticeListView"
+                android:layout_margin="10dp"
+                android:dividerHeight="10dp"
+                android:divider="#ffffff">
+
+            </ListView>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

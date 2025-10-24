@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="major">
+
+        <!-- 학부 과정 -->
+        <!-- 인문대학 -->
+        <item>국어국문학과</item>
+        <item>영어영문학과</item>
+        <item>독어독문학과</item>
+        <item>불어불문학과</item>
+        <item>일본지역문화학과</item>
+        <item>중어중국학과</item>
+
+        <!-- 자연과학대학 -->
+        <item>수학과</item>
+        <item>물리학과</item>
+        <item>화학과</item>
+        <item>패션산업학과</item>
+        <item>해양학과</item>
+
+        <!-- 사회과학대학 -->
+        <item>사회복지학과</item>
+        <item>미디어커뮤니케이션학과</item>
+        <item>문헌정보학과</item>
+        <item>창의인재개발학과</item>
+
+        <!-- 글로벌정경대학 -->
+        <item>행정학과</item>
+        <item>정치외교학과</item>
+        <item>경제학과</item>
+        <item>무역학부</item>
+        <item>소비자학과</item>
+
+        <!-- 공과대학 -->
+        <item>기계공학과</item>
+        <item>전기공학과</item>
+        <item>전자공학과</item>
+        <item>산업경영공학과</item>
+        <item>신소재공학과</item>
+        <item>안전공학과</item>
+        <item>에너지화학공학과</item>
+        <item>바이오-로봇시스템공학과</item>
+
+        <!-- 정보기술대학 -->
+        <item>컴퓨터공학부</item>
+        <item>정보통신공학과</item>
+        <item>임베디드시스템공학과</item>
+
+        <!-- 경영대학 -->
+        <item>경영학부</item>
+        <item>데이터과학과</item>
+        <item>세무회계학과</item>
+        <item>테크노경영학과</item>
+
+        <!-- 예술체육대학 -->
+        <item>한국화전공(조형예술학부)</item>
+        <item>서양화전공(조형예술학부)</item>
+        <item>디자인학부</item>
+        <item>공연예술학과</item>
+        <item>스포츠과학부</item>
+        <item>운동건강학부</item>
+
+        <!-- 사범대학 -->
+        <item>국어교육과</item>
+        <item>영어교육과</item>
+        <item>일어교육과</item>
+        <item>수학교육과</item>
+        <item>체육교육과</item>
+        <item>유아교육과</item>
+        <item>역사교육과</item>
+        <item>윤리교육과</item>
+
+        <!-- 도시과학대학 -->
+        <item>도시행정학과</item>
+        <item>건설환경공학과</item>
+        <item>환경공학과</item>
+        <item>도시공학과</item>
+        <item>건축공학과</item>
+        <item>도시건축학과</item>
+
+        <!-- 생명과학기술대학 -->
+        <item>생명과학부(생명과학전공)</item>
+        <item>생명과학부(분자의생명전공)</item>
+        <item>생명공학부(생명공학전공)</item>
+        <item>생명공학부(나노바이오공학전공)</item>
+
+        <!-- 융합자유전공대학 -->
+        <item>자유전공학부</item>
+        <item>국제자유전공학부</item>
+        <item>융합학부</item>
+
+        <!-- 동북아국제통상학부 -->
+        <item>동북아국제통상학부</item>
+        <item>동북아국제통상전공</item>
+        <item>스마트물류공학전공</item>
+        <item>IBE전공</item>
+
+        <!-- 법학부 -->
+        <item>법학부</item>
+
+        <!-- 대학원 과정: 석사 및 학·석사연계과정 -->
+        <!-- 인문사회 -->
+        <item>국어국문학과(석사과정)</item>
+        <item>영어영문학과(석사과정)</item>
+        <item>독어독문학과(석사과정)</item>
+        <item>불어불문학과(석사과정)</item>
+        <item>일어일문학과(석사과정)</item>
+        <item>중어중문학과(석사과정)</item>
+        <item>문화콘텐츠·문화경영학과(석사과정)</item>
+        <item>윤리교육과(석사과정)</item>
+        <item>행정학과(석사과정)</item>
+        <item>정치외교학과(석사과정)</item>
+        <item>미디어커뮤니케이션학과(석사과정)</item>
+        <item>문헌정보학과(석사과정)</item>
+        <item>경제학과(석사과정)</item>
+        <item>무역학과(석사과정)</item>
+        <item>사회복지학과(석사과정)</item>
+        <item>소비자학과(석사과정)</item>
+        <item>동북아국제통상학과(글로벌차이나)(석사과정)</item>
+
+        <!-- 자연과학 -->
+        <item>수학과(석사과정)</item>
+        <item>물리학과(석사과정)</item>
+        <item>화학과(석사과정)</item>
+        <item>생명과학과(석사과정)</item>
+        <item>해양학과(석사과정)</item>
+        <item>패션산업학과(석사과정)</item>
+        <item>뷰티산업학과(석사과정)</item>
+
+        <!-- 공학 -->
+        <item>기계공학과(석사과정)</item>
+        <item>바이오-로봇 시스템 공학과(석사과정)</item>
+        <item>전기공학과(석사과정)</item>
+        <item>전자공학과(석사과정)</item>
+        <item>산업경영공학과(석사과정)</item>
+        <item>신소재공학과(석사과정)</item>
+        <item>안전공학과(석사과정)</item>
+        <item>컴퓨터공학과(석사과정)</item>
+        <item>정보통신공학과(석사과정)</item>
+        <item>건설환경공학과(석사과정)</item>
+        <item>환경에너지공학과(석사과정)</item>
+        <item>도시공학과(석사과정)</item>
+        <item>생명공학·나노바이오공학과(석사과정)</item>
+        <item>한국산학기술융합학과(협동)(석사과정)</item>
+        <item>지능형반도체학과(협동)(석사과정)</item>
+        <item>바이오융합공학과(협동)(석사과정)</item>
+
+        <!-- 예체능 -->
+        <item>체육학과(석사과정)</item>
+        <item>체육교육과(석사과정)</item>
+        <item>디자인학과(석사과정)</item>
+        <item>공연예술학과(석사과정)</item>
+
+        <!-- 대학원 과정: 박사 및 석·박사통합과정 -->
+        <!-- 인문사회 -->
+        <item>국어국문학과(박사과정)</item>
+        <item>영어영문학과(박사과정)</item>
+        <item>독어독문학과(박사과정)</item>
+        <item>일어일문학과(박사과정)</item>
+        <item>중어중문학과(박사과정)</item>
+        <item>사회복지학과(박사과정)</item>
+        <item>행정학과(박사과정)</item>
+        <item>법학과(박사과정)</item>
+        <item>경제학과(박사과정)</item>
+        <item>무역학과(박사과정)</item>
+        <item>미디어커뮤니케이션학과(박사과정)</item>
+        <item>문헌정보학과(박사과정)</item>
+        <item>경영학과(박사과정)</item>
+        <item>유아교육과(박사과정)</item>
+        <item>문화콘텐츠·문화경영학과(협동)(박사과정)</item>
+        <item>글로벌 지속가능 발전학과(협동)(박사과정)</item>
+        <item>동북아국제통상학과(글로벌차이나)(박사과정)</item>
+
+        <!-- 자연과학 -->
+        <item>수학과(박사과정)</item>
+        <item>물리학과(박사과정)</item>
+        <item>화학과(박사과정)</item>
+        <item>생명과학과(박사과정)</item>
+        <item>해양학과(박사과정)</item>
+        <item>패션산업학과(박사과정)</item>
+        <item>뷰티산업학과(박사과정)</item>
+
+        <!-- 공학 -->
+        <item>기계공학과(박사과정)</item>
+        <item>바이오-로봇 시스템 공학과(박사과정)</item>
+        <item>전기공학과(박사과정)</item>
+        <item>전자공학과(박사과정)</item>
+        <item>산업경영공학과(박사과정)</item>
+        <item>신소재공학과(박사과정)</item>
+        <item>안전공학과(박사과정)</item>
+        <item>컴퓨터공학과(박사과정)</item>
+        <item>정보통신공학과(박사과정)</item>
+        <item>환경에너지공학과(박사과정)</item>
+        <item>생명공학·나노바이오공학과(박사과정)</item>
+        <item>기술국제개발협력학과(협동)(박사과정)</item>
+        <item>지능형반도체학과(협동)(박사과정)</item>
+        <item>바이오융합공학과(협동)(박사과정)</item>
+
+        <!-- 예체능 -->
+        <item>체육학과(박사과정)</item>
+        <item>디자인학과(박사과정)</item>
+
+    </string-array>
+
+
+
+    <string-array name="year">
+
+        <item>2016년도</item>
+        <item>2017년도</item>
+        <item>2018년도</item>
+        <item>2019년도</item>
+        <item>2020년도</item>
+        <item>2021년도</item>
+        <item>2022년도</item>
+        <item>2023년도</item>
+        <item>2024년도</item>
+        <item>2025년도</item>
+        <item>2026년도</item>
+
+    </string-array>
+
+
+
+    <string-array name="term">
+
+        <item>1학기</item>
+        <item>여름학기</item>
+        <item>2학기</item>
+        <item>겨울학기</item>
+
+    </string-array>
+
+
+
+    <string-array name="universityArea">
+
+        <item>기초교양</item>
+        <item>핵심교양</item>
+        <item>심화교양</item>
+        <item>전공기초</item>
+        <item>전공핵심</item>
+        <item>전공심화</item>
+
+    </string-array>
+
+
+
+    <!-- https://www.inu.ac.kr/industry/5315/subview.do -->
+    <string-array name="graduateArea">
+
+        <item>전공필수</item>
+        <item>전공선택</item>
+
+    </string-array>
+
+
+
+    <!-- 교양 -->
+    <string-array name="universityRefinementMajor">
+
+        <item>기초교양(학문의기초)</item>
+        <item>핵심교양(INU세미나)</item>
+        <item>핵심교양(인문)</item>
+        <item>핵심교양(사회)</item>
+        <item>핵심교양(과학기술)</item>
+        <item>핵심교양(예술체육)</item>
+        <item>핵심교양(외국어)</item>
+        <item>심화교양(인문)</item>
+        <item>심화교양(사회)</item>
+        <item>심화교양(과학기술)</item>
+        <item>심화교양(예술체육)</item>
+        <item>심화교양(외국어)</item>
+
+    </string-array>
+
+    <!-- [추가] 학부의 '기초교양' 선택 시 보여줄 세부 목록 -->
+    <string-array name="university_area_basic">
+        <item>기초교양(학문의기초)</item>
+    </string-array>
+
+    <!-- [추가] 학부의 '핵심교양' 선택 시 보여줄 세부 목록 -->
+    <string-array name="university_area_core">
+        <item>핵심교양(INU세미나)</item>
+        <item>핵심교양(인문)</item>
+        <item>핵심교양(사회)</item>
+        <item>핵심교양(과학기술)</item>
+        <item>핵심교양(예술체육)</item>
+        <item>핵심교양(외국어)</item>
+    </string-array>
+
+    <!-- [추가] 학부의 '심화교양' 선택 시 보여줄 세부 목록 -->
+    <string-array name="university_area_advanced">
+        <item>심화교양(인문)</item>
+        <item>심화교양(사회)</item>
+        <item>심화교양(과학기술)</item>
+        <item>심화교양(예술체육)</item>
+        <item>심화교양(외국어)</item>
+    </string-array>
+    
+
+
+    <!-- 학부생들의 학과 -->
+    <string-array name="universityMajor">
+
+        <!-- 학부 과정 -->
+        <!-- 인문대학 -->
+        <item>국어국문학과</item>
+        <item>영어영문학과</item>
+        <item>독어독문학과</item>
+        <item>불어불문학과</item>
+        <item>일본지역문화학과</item>
+        <item>중어중국학과</item>
+
+        <!-- 자연과학대학 -->
+        <item>수학과</item>
+        <item>물리학과</item>
+        <item>화학과</item>
+        <item>패션산업학과</item>
+        <item>해양학과</item>
+
+        <!-- 사회과학대학 -->
+        <item>사회복지학과</item>
+        <item>미디어커뮤니케이션학과</item>
+        <item>문헌정보학과</item>
+        <item>창의인재개발학과</item>
+
+        <!-- 글로벌정경대학 -->
+        <item>행정학과</item>
+        <item>정치외교학과</item>
+        <item>경제학과</item>
+        <item>무역학부</item>
+        <item>소비자학과</item>
+
+        <!-- 공과대학 -->
+        <item>기계공학과</item>
+        <item>전기공학과</item>
+        <item>전자공학과</item>
+        <item>산업경영공학과</item>
+        <item>신소재공학과</item>
+        <item>안전공학과</item>
+        <item>에너지화학공학과</item>
+        <item>바이오-로봇시스템공학과</item>
+
+        <!-- 정보기술대학 -->
+        <item>컴퓨터공학부</item>
+        <item>정보통신공학과</item>
+        <item>임베디드시스템공학과</item>
+
+        <!-- 경영대학 -->
+        <item>경영학부</item>
+        <item>데이터과학과</item>
+        <item>세무회계학과</item>
+        <item>테크노경영학과</item>
+
+        <!-- 예술체육대학 -->
+        <item>한국화전공(조형예술학부)</item>
+        <item>서양화전공(조형예술학부)</item>
+        <item>디자인학부</item>
+        <item>공연예술학과</item>
+        <item>스포츠과학부</item>
+        <item>운동건강학부</item>
+
+        <!-- 사범대학 -->
+        <item>국어교육과</item>
+        <item>영어교육과</item>
+        <item>일어교육과</item>
+        <item>수학교육과</item>
+        <item>체육교육과</item>
+        <item>유아교육과</item>
+        <item>역사교육과</item>
+        <item>윤리교육과</item>
+
+        <!-- 도시과학대학 -->
+        <item>도시행정학과</item>
+        <item>건설환경공학과</item>
+        <item>환경공학과</item>
+        <item>도시공학과</item>
+        <item>건축공학과</item>
+        <item>도시건축학과</item>
+
+        <!-- 생명과학기술대학 -->
+        <item>생명과학부(생명과학전공)</item>
+        <item>생명과학부(분자의생명전공)</item>
+        <item>생명공학부(생명공학전공)</item>
+        <item>생명공학부(나노바이오공학전공)</item>
+
+        <!-- 융합자유전공대학 -->
+        <item>자유전공학부</item>
+        <item>국제자유전공학부</item>
+        <item>융합학부</item>
+
+        <!-- 동북아국제통상학부 -->
+        <item>동북아국제통상학부</item>
+        <item>동북아국제통상전공</item>
+        <item>스마트물류공학전공</item>
+        <item>IBE전공</item>
+
+        <!-- 법학부 -->
+        <item>법학부</item>
+
+    </string-array>
+
+
+
+    <!-- 대학원생들의 학과 -->
+    <string-array name="graduateMajor">
+
+        <!-- 대학원 과정: 석사 및 학·석사연계과정 -->
+        <!-- 인문사회 -->
+        <item>국어국문학과(석사과정)</item>
+        <item>영어영문학과(석사과정)</item>
+        <item>독어독문학과(석사과정)</item>
+        <item>불어불문학과(석사과정)</item>
+        <item>일어일문학과(석사과정)</item>
+        <item>중어중문학과(석사과정)</item>
+        <item>문화콘텐츠·문화경영학과(석사과정)</item>
+        <item>윤리교육과(석사과정)</item>
+        <item>행정학과(석사과정)</item>
+        <item>정치외교학과(석사과정)</item>
+        <item>미디어커뮤니케이션학과(석사과정)</item>
+        <item>문헌정보학과(석사과정)</item>
+        <item>경제학과(석사과정)</item>
+        <item>무역학과(석사과정)</item>
+        <item>사회복지학과(석사과정)</item>
+        <item>소비자학과(석사과정)</item>
+        <item>동북아국제통상학과(글로벌차이나)(석사과정)</item>
+
+        <!-- 자연과학 -->
+        <item>수학과(석사과정)</item>
+        <item>물리학과(석사과정)</item>
+        <item>화학과(석사과정)</item>
+        <item>생명과학과(석사과정)</item>
+        <item>해양학과(석사과정)</item>
+        <item>패션산업학과(석사과정)</item>
+        <item>뷰티산업학과(석사과정)</item>
+
+        <!-- 공학 -->
+        <item>기계공학과(석사과정)</item>
+        <item>바이오-로봇 시스템 공학과(석사과정)</item>
+        <item>전기공학과(석사과정)</item>
+        <item>전자공학과(석사과정)</item>
+        <item>산업경영공학과(석사과정)</item>
+        <item>신소재공학과(석사과정)</item>
+        <item>안전공학과(석사과정)</item>
+        <item>컴퓨터공학과(석사과정)</item>
+        <item>정보통신공학과(석사과정)</item>
+        <item>건설환경공학과(석사과정)</item>
+        <item>환경에너지공학과(석사과정)</item>
+        <item>도시공학과(석사과정)</item>
+        <item>생명공학·나노바이오공학과(석사과정)</item>
+        <item>한국산학기술융합학과(협동)(석사과정)</item>
+        <item>지능형반도체학과(협동)(석사과정)</item>
+        <item>바이오융합공학과(협동)(석사과정)</item>
+
+        <!-- 예체능 -->
+        <item>체육학과(석사과정)</item>
+        <item>체육교육과(석사과정)</item>
+        <item>디자인학과(석사과정)</item>
+        <item>공연예술학과(석사과정)</item>
+
+        <!-- 대학원 과정: 박사 및 석·박사통합과정 -->
+        <!-- 인문사회 -->
+        <item>국어국문학과(박사과정)</item>
+        <item>영어영문학과(박사과정)</item>
+        <item>독어독문학과(박사과정)</item>
+        <item>일어일문학과(박사과정)</item>
+        <item>중어중문학과(박사과정)</item>
+        <item>사회복지학과(박사과정)</item>
+        <item>행정학과(박사과정)</item>
+        <item>법학과(박사과정)</item>
+        <item>경제학과(박사과정)</item>
+        <item>무역학과(박사과정)</item>
+        <item>미디어커뮤니케이션학과(박사과정)</item>
+        <item>문헌정보학과(박사과정)</item>
+        <item>경영학과(박사과정)</item>
+        <item>유아교육과(박사과정)</item>
+        <item>문화콘텐츠·문화경영학과(협동)(박사과정)</item>
+        <item>글로벌 지속가능 발전학과(협동)(박사과정)</item>
+        <item>동북아국제통상학과(글로벌차이나)(박사과정)</item>
+
+        <!-- 자연과학 -->
+        <item>수학과(박사과정)</item>
+        <item>물리학과(박사과정)</item>
+        <item>화학과(박사과정)</item>
+        <item>생명과학과(박사과정)</item>
+        <item>해양학과(박사과정)</item>
+        <item>패션산업학과(박사과정)</item>
+        <item>뷰티산업학과(박사과정)</item>
+
+        <!-- 공학 -->
+        <item>기계공학과(박사과정)</item>
+        <item>바이오-로봇 시스템 공학과(박사과정)</item>
+        <item>전기공학과(박사과정)</item>
+        <item>전자공학과(박사과정)</item>
+        <item>산업경영공학과(박사과정)</item>
+        <item>신소재공학과(박사과정)</item>
+        <item>안전공학과(박사과정)</item>
+        <item>컴퓨터공학과(박사과정)</item>
+        <item>정보통신공학과(박사과정)</item>
+        <item>환경에너지공학과(박사과정)</item>
+        <item>생명공학·나노바이오공학과(박사과정)</item>
+        <item>기술국제개발협력학과(협동)(박사과정)</item>
+        <item>지능형반도체학과(협동)(박사과정)</item>
+        <item>바이오융합공학과(협동)(박사과정)</item>
+
+        <!-- 예체능 -->
+        <item>체육학과(박사과정)</item>
+        <item>디자인학과(박사과정)</item>
+
+    </string-array>
+
+    <string-array name="rank">
+        <item>전체에서</item>
+        <item>우리과에서</item>
+        <item>남성 선호도</item>
+        <item>여성 선호도</item>
+        <item>전공 인기도</item>
+        <item>교양 인기도</item>
+    </string-array>
+
+</resources>
+

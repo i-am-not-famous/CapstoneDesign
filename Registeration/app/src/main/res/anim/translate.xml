@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 스플래시 화면 구현 -->
+<!-- 1. app -> java -> Splashscreen.java -->
+<!-- 2. app -> res -> layout -> activity_splashscreen.xml -->
+<!-- 3. app -> res -> anim -> alpha.xml -->
+<!-- 4. app -> res -> anim -> translate.xml -->
+<!-- 5. app -> manifest -> AndroidManifest.xml (코드 추가) -->
+
+<!-- 출처 -->
+<!-- https://v-v-i-t-h.tistory.com/4 -->
+<!-- How to add animated splash screen to you android app using android studio - Androidmkab -->
+<!-- (http://androidmkab.com/2016/04/09/how-to-add-animated-splash-screen-to-you-android-app-using-android-studio/) -->
+
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <translate
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fromXDelta="0%"
+        android:toXDelta="0%"
+        android:fromYDelta="200%"
+        android:toYDelta="0%"
+        android:duration="2000"
+        android:zAdjustment="top" />
+
+</set>

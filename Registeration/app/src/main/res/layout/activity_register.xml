@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/colorBackground">
+
+    <!-- 1. 상단 배경 (파란색 영역) -->
+    <View
+        android:id="@+id/top_background_view"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 2. '회원가입' 텍스트 -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top_background_view"
+        app:layout_constraintBottom_toBottomOf="@id/top_background_view"/>
+
+    <!-- 3. 아이디 입력창 -->
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edittext_border"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@android:color/black"
+        android:hint="아이디"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/top_background_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/validateButton" />
+
+    <!-- 3-1. 중복 체크 버튼 -->
+    <Button
+        android:id="@+id/validateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/colorWarning"
+        android:text="중복체크"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/idText"
+        app:layout_constraintBottom_toBottomOf="@id/idText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- 4. 비밀번호 입력창 -->
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_border"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@android:color/black"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@id/idText"
+        app:layout_constraintEnd_toEndOf="@id/validateButton"
+        app:layout_constraintTop_toBottomOf="@id/idText"
+        android:importantForAutofill="no" />
+
+    <!-- 5. 비밀번호 확인 입력창 (제거됨) -->
+    <!-- 이 부분의 코드가 삭제되었습니다. -->
+
+    <!-- 6. 이메일 입력창 (수정: 기준점을 passwordText로 변경) -->
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_border"
+        android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableTint="@android:color/black"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@id/passwordText"
+        app:layout_constraintEnd_toEndOf="@id/passwordText"
+        app:layout_constraintTop_toBottomOf="@id/passwordText"
+        android:importantForAutofill="no" />
+
+    <!-- 7. 성별 선택 라디오 그룹 -->
+    <RadioGroup
+        android:id="@+id/genderGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/emailText"
+        app:layout_constraintEnd_toEndOf="@id/emailText"
+        app:layout_constraintTop_toBottomOf="@id/emailText">
+        <!-- ... RadioButton 내용 ... -->
+        <RadioButton
+            android:id="@+id/genderWoman"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="여성" />
+        <RadioButton
+            android:id="@+id/genderMan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="남성" />
+    </RadioGroup>
+
+    <!-- 8. 학과 선택 스피너 -->
+    <Spinner
+        android:id="@+id/majorSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_border"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="@id/genderGroup"
+        app:layout_constraintEnd_toEndOf="@id/genderGroup"
+        app:layout_constraintTop_toBottomOf="@id/genderGroup" />
+
+    <!-- 9. 최종 회원가입 버튼 -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_border"
+        android:minHeight="48dp"
+        android:text="가입하기"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/majorSpinner"
+        app:layout_constraintEnd_toEndOf="@id/majorSpinner"
+        app:layout_constraintTop_toBottomOf="@id/majorSpinner"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
